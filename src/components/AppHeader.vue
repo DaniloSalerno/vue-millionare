@@ -11,8 +11,9 @@ export default {
 </script>
 
 <template>
-  <header>
+  <header class="d-flex justify-content-center align-items-center">
 
+    <img width="200" src="../assets/img/logo.png" alt="logo">
   </header>
 </template>
 
@@ -21,6 +22,6 @@ export default {
 
 header {
   height: 35vh;
-  background-color: $primary_dark;
+  background-color: $primary_light;
 }
 </style>
