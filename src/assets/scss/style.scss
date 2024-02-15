@@ -1,0 +1,9 @@
+@use 'bootstrap';
+
+@use './partials/variables';
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
