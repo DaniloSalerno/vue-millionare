@@ -36,7 +36,7 @@ export default {
     font-size: 0.5rem;
 
     #price {
-        width: 50px;
+        width: 60px;
     }
 }
 

@@ -3,6 +3,7 @@ import AppAnswersBox from './AppAnswersBox.vue';
 import AppQuestion from './AppQuestion.vue';
 import AppLose from './AppLose.vue';
 import { state } from '../state'
+import AppWin from './AppWin.vue';
 
 export default {
     name: 'AppMain',
@@ -13,16 +14,14 @@ export default {
     },
     methods: {
     },
-    components: { AppQuestion, AppAnswersBox, AppLose }
+    components: { AppQuestion, AppAnswersBox, AppLose, AppWin }
 }
 </script>
 
 <template>
     <main>
 
-        <div class="d-flex justify-content-center align-items-center text-white pt-5" v-if="this.state.count === 15">
-            Hai vinto
-        </div>
+        <AppWin v-if="this.state.count === 15" />
 
         <div class="container" v-else-if="!this.state.lose">
             <AppQuestion />
