@@ -1,13 +1,25 @@
 <script>
+import { state } from '../state'
 export default {
-    name: 'AppAnswer'
+    name: 'AppAnswer',
+    data() {
+        return {
+            state
+        }
+    },
+    props: {
+        answers: Array,
+        n: Number
+    },
+    mounted() {
+    }
 
 }
 </script>
 
 <template>
     <div class="col">
-        <div class="answer">ciao</div>
+        <div class="answer">{{ answers[n - 1].text }}</div>
     </div>
 </template>
 

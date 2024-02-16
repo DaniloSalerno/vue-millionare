@@ -1,18 +1,21 @@
 <script>
+import { state } from '../state';
+
 export default {
     name: 'AppQuestion',
     data() {
         return {
-
+            state
         }
+    },
+    mounted() {
     }
 }
 </script>
 
 <template>
     <div id="question">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi hic nesciunt aliquid. Ad ex dolores deleniti
-        modi?
+        {{ state.qAndA[state.count].question }}
     </div>
 </template>
 

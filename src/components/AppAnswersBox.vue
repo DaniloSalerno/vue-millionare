@@ -1,10 +1,13 @@
 <script>
 import AppAnswer from './AppAnswer.vue';
+import { state } from '../state'
 
 export default {
     name: 'AppAnswersBox',
     data() {
-        return {};
+        return {
+            state
+        };
     },
     components: { AppAnswer }
 
@@ -15,7 +18,8 @@ export default {
     <div id="answer_box" class="text-white text-center">
         <div class="row row-cols-1 row-cols-md-2 g-3">
 
-            <AppAnswer v-for="n in 4" />
+            <AppAnswer v-for="n in state.qAndA[state.count].answers.length" :n="n"
+                :answers="state.qAndA[state.count].answers" />
 
         </div>
     </div>
