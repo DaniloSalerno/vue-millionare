@@ -139,6 +139,56 @@ export const state = reactive({
         }
     ],
 
+    prices: [
+        {
+            id: 1, price: '500 €', goal: false
+        },
+        {
+            id: 2, price: '1.000 €', goal: false
+        },
+        {
+            id: 3, price: '1.500 €', goal: false
+        },
+        {
+            id: 4, price: '2.000 €', goal: false
+        },
+        {
+            id: 5, price: '3.000 €', goal: true
+        },
+        {
+            id: 6, price: '5.000 €', goal: false
+        },
+        {
+            id: 7, price: '7.000 €', goal: false
+        },
+        {
+            id: 8, price: '10.000 €', goal: false
+        },
+        {
+            id: 9, price: '15.000 €', goal: false
+        },
+        {
+            id: 10, price: '20.000 €', goal: true
+        },
+        {
+            id: 11, price: '30.000 €', goal: false
+        },
+        {
+            id: 12, price: '75.000 €', goal: false
+        },
+        {
+            id: 13, price: '150.000 €', goal: false
+        },
+        {
+            id: 14, price: '300.000 €', goal: false
+        },
+        {
+            id: 15, price: '1.000.000 €', goal: true
+        },
+
+
+    ],
+
     count: 0,
 
     index: 0,
@@ -147,5 +197,7 @@ export const state = reactive({
 
     lose: false,
 
-    correct: false
+    correct: false,
+
+    moneyWon: 0
 })

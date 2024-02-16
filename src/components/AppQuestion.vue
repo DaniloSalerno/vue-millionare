@@ -24,7 +24,7 @@ export default {
 #question {
     color: white;
 
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
 
     text-align: center;
 

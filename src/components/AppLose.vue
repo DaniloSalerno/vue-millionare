@@ -20,11 +20,16 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <div class="d-flex justify-content-center align-items-center pt-5 gap-3">
-            <div class="text-white">
+    <div class="container text-white">
+        <div class="d-flex flex-column justify-content-center align-items-center pt-5 gap-5">
+            <h3 class="bg-danger p-3 rounded-pill text-uppercase">
                 Risposta sbagliata
+            </h3>
+
+            <div>
+                Hai Vinto: {{ this.state.moneyWon ? this.state.moneyWon : '0 €' }}
             </div>
+
             <div>
                 <button class="btn btn-success" @click="restart()">
                     Inizia una nuova partita

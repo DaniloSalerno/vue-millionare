@@ -16,7 +16,10 @@ export default {
 
                 this.state.correct = true
 
-                state.modalConfim = false
+                this.state.modalConfim = false
+
+
+
 
             } else {
                 this.state.lose = true
@@ -25,10 +28,16 @@ export default {
         },
 
         correctAnswer() {
+            this.state.prices[this.state.count].goal = false
+
             this.state.modalConfim = false
             this.state.count++
             this.state.index = 0
             this.state.correct = false
+
+            if (this.state.prices[this.state.count].goal) {
+                this.state.moneyWon = this.state.prices[this.state.count].price
+            }
 
         },
 
