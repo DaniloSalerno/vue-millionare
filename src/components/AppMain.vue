@@ -1,18 +1,22 @@
 <script>
+import AppAnswersBox from './AppAnswersBox.vue';
+import AppQuestion from './AppQuestion.vue';
+
 export default {
     name: 'AppMain',
-
     data() {
-        return {
-
-        }
-    }
+        return {};
+    },
+    components: { AppQuestion, AppAnswersBox }
 }
 </script>
 
 <template>
     <main>
-
+        <div class="container">
+            <AppQuestion />
+            <AppAnswersBox />
+        </div>
     </main>
 </template>
 
@@ -22,5 +26,11 @@ export default {
 main {
     height: 65vh;
     background-color: $primary_dark;
+
+    padding-top: 3rem;
+
+    .container {
+        width: 75%;
+    }
 }
 </style>
